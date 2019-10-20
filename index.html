@@ -1,13 +1,53 @@
 <!DOCTYPE html>
 <html>
   <head>
-    <meta charset="utf-8">
+    <meta charset="utf-8" />
     <title>Change Calculator</title>
+    <link rel="stylesheet" href="styles.css" />
   </head>
   <body>
     <!-- Write your markup here -->
 
-    <!-- Don't forget to add your <script> tag here -->
+    <div class="main-wrapper">
+      <div class="head-wrapper">
+        <h1>Change Calculator</h1>
+      </div>
+      <div class="calculator-wrapper">
+        <div class="item1">
+          <div class="input-wrapper">
+            <label for="amount-due">How much money is due?</label>
+            <input id="amount-due" type="number" placeholder="Amount Due" />
+          </div>
+          <div class="input-wrapper">
+            <label for="amount-received"
+              >How much money has the customer payed?</label
+            >
+            <input
+              id="amount-received"
+              type="number"
+              placeholder="Amount Received"
+            />
+          </div>
+        </div>
+        <div class="item2">
+          <button id="calculate-change" style="margin-bottom: 10px;">
+            Calculate Change
+          </button>
+          <label for="dollars-ouput"><img src="dollar.png" /> Dollars</label>
+          <p id="dollars-output">0</p>
+          <label for="quarters-ouput"><img src="quarter.png" /> Quarters</label>
+          <p id="quarters-output">0</p>
+          <label for="dimes-ouput"><img src="dime.png" /> Dimes</label>
+          <p id="dimes-output">0</p>
+          <label for="nickles-ouput"><img src="nickel.png" /> Nickles</label>
+          <p id="nickels-output">0</p>
+          <label for="pennies-ouput"><img src="penny.png" /> Pennies</label>
+          <p id="pennies-output">0</p>
+        </div>
+      </div>
+    </div>
 
+    <!-- Don't forget to add your <script> tag here -->
+    <script src="main.js" charset="utf-8"></script>
   </body>
 </html>
